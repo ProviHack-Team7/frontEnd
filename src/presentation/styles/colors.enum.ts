@@ -1,0 +1,16 @@
+export enum Colors {
+  WHITE = '#FFF',
+  WHITESMOKE = '#e1e2e0',
+  BLACK = '#000',
+  BLUE = '#29313e',
+  DARKER_BLUE = '#202630',
+  GOLD = '#b18935',
+  ORANGE = '#b18935',
+  SOFTBLUE = '#3D92DC',
+  BABYGREEN = '#19C193',
+  ADULTGREEN = '#83B71B',
+  YELLOW = '#CE9000',
+  BLOODRED = '#DC3D4B',
+  GRAY = '#A1A9B4',
+  RED = '#FF0000',
+}

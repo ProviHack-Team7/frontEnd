@@ -1,0 +1,3 @@
+# store
+
+- `/store` contém a camada de controle de estado da aplicação. Seja ele MobX, Flux, Redux, Redux/Toolkit etc...
