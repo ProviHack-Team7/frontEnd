@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { Colors } from "@/presentation/styles/colors.enum";
-import background from "@/presentation/assets/content.svg";
+import background from "@/presentation/assets/Bem-vindes.svg";
+import mock01 from "@/presentation/assets/mock01.svg";
+import mock02 from "@/presentation/assets/mock02.svg";
 
 export const Container = styled.div`
   width: 375px;
@@ -9,7 +11,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-self: center;
-  justify-content: space-around;
+  justify-content: center;
 
   background-color: ${Colors.PRIMARY_IV};
   .footbar_icons {
@@ -28,7 +30,7 @@ export const Container = styled.div`
 
     background-image: url(${background});
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
 
     h2 {
@@ -47,25 +49,36 @@ export const Container = styled.div`
     }
 
     button {
-      width: 105px;
+      width: 203px;
       height: 26px;
-      align-self: center;
+      align-self: flex-end;
       background-color: transparent;
-      border: 1px solid ${Colors.LIGHT};
+      border: 1px solid ${Colors.PRIMARY_III};
+      background-color: ${Colors.PRIMARY_IV};
       border-radius: 3px;
 
       font-size: 0.6rem;
       font-weight: bold;
-      color: ${Colors.LIGHT};
-
+      text-transform: uppercase;
+      color: ${Colors.PRIMARY_III};
+      margin-right: 10px;
       cursor: pointer;
-      margin-left: 20px;
     }
   }
+  /* mocado devido a falta de tempo hábio */
   span:nth-child(3) {
-    background-color: ${Colors.PRIMARY_III};
+    height: 220px;
+    background-image: url(${mock01});
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
+  /* mocado devido a falta de tempo hábio */
   span:nth-child(4) {
-    background-color: purple;
+    height: 154px;
+    background-image: url(${mock02});
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 `;

@@ -9,7 +9,7 @@ export const Header = () => {
     <MainContainer>
       <Logo onClick={() => navigate("/")}></Logo>
       <p onClick={() => navigate("/")}>sobre nós</p>
-      <p onClick={() => navigate("/blog")}>blog</p>
+      <p onClick={() => navigate("/")}>blog</p>
       <p onClick={() => navigate("/")}>cases</p>
       <Button onClick={() => navigate("/signup")}>cadastrar</Button>
       <Button onClick={() => navigate("/signin")}>login</Button>

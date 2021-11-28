@@ -19,7 +19,7 @@ export const Content = () => {
       <Contents>
         <h1>73% dos estudantes LGBTQIA+</h1>
         <p>disseram já terem sido agredidos verbalmente, e 36%, fisicamente.</p>
-        <Button onClick={() => navigate("/quiz")}>ver mais</Button>
+        <Button onClick={() => navigate("/")}>ver mais</Button>
       </Contents>
       <Cards>
         <CentredRightColumnLayout>

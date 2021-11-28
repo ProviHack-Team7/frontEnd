@@ -2,6 +2,8 @@ import styled from "styled-components";
 import { Colors } from "@/presentation/styles/colors.enum";
 
 export const Container = styled.div`
+  max-width: 375px;
+  margin: auto;
   background-color: ${Colors.PRIMARY_IV};
   box-sizing: border-box;
 

@@ -9,7 +9,7 @@ export const QuizCards = ({ quiz }: QuizProps) => {
   return (
     <Container>
       {quiz.map((elem: Object, index: number) => (
-        <QuizBox elem={elem} index={index} />
+        <QuizBox key={index} elem={elem} index={index} />
       ))}
     </Container>
   );

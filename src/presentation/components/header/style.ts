@@ -3,7 +3,7 @@ import logo from "@/presentation/assets/Logotipo-provisório-1.svg";
 import { Colors } from "@/presentation/styles/colors.enum";
 
 export const Logo = styled.div`
-  width: 20px;
+  width: 50px;
   height: 30px;
 
   background-image: url(${logo});
@@ -11,6 +11,19 @@ export const Logo = styled.div`
   background-size: contain;
   background-position: center;
   cursor: pointer;
+
+  position: relative;
+  ::after {
+    content: "Duda Academy";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    font-size: 0.5rem;
+    font-weight: bold;
+    color: ${Colors.PRIMARY_III};
+    top: 110%;
+    left: -10%;
+  }
 `;
 
 export const MainContainer = styled.div`

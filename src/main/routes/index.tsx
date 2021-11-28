@@ -21,6 +21,8 @@ import { dispatchAlocateRequests, useAppDispatch } from "@/data/store";
 import { HomePage } from "@/presentation/pages/home";
 import { QuizPage } from "@/presentation/pages/quiz";
 import { Dashboard } from "@/presentation/pages/dashboard";
+import { RankingPage } from "@/presentation/pages/ranking";
+import { LibraryPage } from "@/presentation/pages/info";
 
 const HomeRedir = (
   <Route
@@ -84,6 +86,22 @@ const Routes: FC = (): RE => {
           element={
             <div>
               <QuizPage />
+            </div>
+          }
+        />
+        <Route
+          path="/ranking"
+          element={
+            <div>
+              <RankingPage />
+            </div>
+          }
+        />
+        <Route
+          path="/library"
+          element={
+            <div>
+              <LibraryPage />
             </div>
           }
         />

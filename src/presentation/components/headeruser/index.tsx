@@ -11,17 +11,17 @@ export const UserHeader = () => {
   return (
     <MainContainer>
       <Logo onClick={() => navigate("/")}></Logo>
-      <div>
+      <div onClick={() => navigate("/library")}>
         <MdClass />
-        <p onClick={() => navigate("/")}>Biblioteca</p>
+        <p>Biblioteca</p>
       </div>
-      <div>
+      <div onClick={() => navigate("/")}>
         <MdPinDrop />
-        <p onClick={() => navigate("/")}>Pontos</p>
+        <p>Pontos</p>
       </div>
-      <div>
+      <div onClick={() => navigate("/ranking")}>
         <FaTrophy />
-        <p onClick={() => navigate("/")}>Ranking</p>
+        <p>Ranking</p>
       </div>
       <img src={user} alt="user" />
     </MainContainer>
