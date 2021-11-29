@@ -11,16 +11,22 @@ import {
   Navigate,
   BrowserRouter,
 } from "react-router-dom";
-import { SignIn } from "@/presentation/pages/authentication";
+import { SignIn } from "@/presentation/pages/signin";
+import { SignUp } from "@/presentation/pages/signup";
 import L10n from "@/data/l10n/L10n";
 import { selectRefreshTokenRequestState } from "@/presentation/pages/authentication/sign-in/state/AuthFormSlice";
 import { useSelector } from "react-redux";
 import { RequestState } from "@/presentation/pages/authentication/sign-in/state/AuthFormSlice.types";
 import { dispatchAlocateRequests, useAppDispatch } from "@/data/store";
+import { HomePage } from "@/presentation/pages/home";
+import { QuizPage } from "@/presentation/pages/quiz";
+import { Dashboard } from "@/presentation/pages/dashboard";
+import { RankingPage } from "@/presentation/pages/ranking";
+import { LibraryPage } from "@/presentation/pages/info";
 
 const HomeRedir = (
   <Route
-    path='/'
+    path="/"
     element={
       <Navigate replace to={L10n.formatMessage({ id: "routes.sign.in" })} />
     }
@@ -42,13 +48,62 @@ const Routes: FC = (): RE => {
   return (
     <BrowserRouter>
       <Switch>
+        <Route path="/secundary" element={<div>Secundary</div>} />
         <Route
-          path='/secundary'
-          element={<div>Secundary</div>}
+          path="/"
+          element={
+            <div>
+              <HomePage />
+            </div>
+          }
         />
         <Route
-          path='/'
-          element={<div>Home</div>}
+          path="/signup"
+          element={
+            <div>
+              <SignUp />
+            </div>
+          }
+        />
+        <Route
+          path="/signin"
+          element={
+            <div>
+              <SignIn />
+            </div>
+          }
+        />
+        <Route
+          path="/dashboard"
+          element={
+            <div>
+              <Dashboard />
+            </div>
+          }
+        />
+        <Route
+          path="/quiz"
+          element={
+            <div>
+              <QuizPage />
+            </div>
+          }
+        />
+        <Route
+          path="/ranking"
+          element={
+            <div>
+              <RankingPage />
+            </div>
+          }
+        />
+        <Route
+          path="/library"
+          element={
+            <div>
+              <LibraryPage />
+            </div>
+          }
         />
       </Switch>
     </BrowserRouter>
